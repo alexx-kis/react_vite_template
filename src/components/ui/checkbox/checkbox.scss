@@ -1,0 +1,19 @@
+@use '../../../styles/abstracts' as *;
+
+/*^ // ^======================== checkbox ========================^ // ^*/
+
+.checkbox {
+  flex-shrink: 0;
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: background-image 250ms;
+  @include square(const(12px));
+
+  input {
+    position: absolute;
+    opacity: 0;
+    z-index: calc(-Infinity);
+  }
+}
